@@ -1,0 +1,166 @@
+/* 공통스타일 */
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+p{
+  font-family: Nanum Pen Script, cursive, sans-serif;
+}
+
+/* header */
+/* Top__menu */
+header{
+  width: 100%;
+  height: 120px;
+}
+.gnd__bg{
+  width: 100%;
+  background-color: #7f7f7f;
+}
+.inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner .gnd{
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background-color: #7f7f7f;
+}
+.inner .gnd > div{
+  display: flex;
+}
+.inner .gnd > div > a{
+  display: block;
+  margin-top:10px;
+  margin-right: 7px;
+  font-size: 13px;
+  color: #000;
+}
+.inner .gnd > div > p{
+  display: block;
+  margin-top:10px;
+  margin-right: 7px;
+  font-size: 13px;
+  color: #000;
+}
+
+.inner .gnd > div > a:active{
+  color: #fff;
+}
+
+
+
+
+/* Main__menu */
+.lnb__bg{
+  width: 100%;
+  background-color: #a5a5a5;
+}
+.lnb{
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a5a5a5;
+}
+
+.lnb .main__menu{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.lnb .main__menu > li{
+  padding: 0 40px 0 40px;
+  font-family:Nanum Pen Script, cursive, sans-serif;
+  font-size: 25px;
+}
+.lnb .main__menu > li a:hover{
+  color: #000;
+
+}
+.lnb .main__menu > li:hover .sub__menu{
+  display: block;
+}
+
+.lnb .main__menu .sub__menu{
+  display: none;
+  z-index: 1;
+}
+
+
+.lnb .main__menu > li a{
+  color: #f2f2f2;
+}
+.lnb .main__menu > li:first-child{
+  padding-left: 0;
+}
+.lnb .icon{
+  display: flex;
+  text-align: center;
+  margin-top: 1px;
+
+ 
+}
+.lnb .icon > input{
+  font-size: 13px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #808080;
+}
+.lnb .icon > input:focus{
+  border-color: #f2f2f2;
+}
+.lnb .icon > a:hover{
+  cursor: pointer;
+}
+
+/* Sub__menu */
+.main__menu .sub__menu{
+  position: absolute;
+  margin-top: 2px;
+  background-color: #333;
+  border-radius: 5px;
+
+}
+
+.main__menu .sub__menu > li{
+  margin: 10px;
+}
+
+
+/* section  */
+.Middle > p{
+height: 150px;
+  display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+font-family:Nanum Pen Script, cursive, sans-serif;
+background-color: antiquewhite;
+}
+.inner .best__case{
+  display: flex;
+  justify-content: space-around;
+
+}
+.inner .best__case > div > a > img{
+  margin-right: 24px;
+}
+.inner .best__case > div{
+  text-align: center;
+}
+.inner .best__case > div > p{
+font-size: 25px;
+}
+.inner .best__case > div > p+p{
+font-size: 20px;
+}
+.inner .best__case > div > p:last-child{
+  font-size: 15px;
+}
