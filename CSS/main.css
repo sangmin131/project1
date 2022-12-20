@@ -9,6 +9,12 @@ p{
   font-family: Nanum Pen Script, cursive, sans-serif;
 }
 
+.inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
 /* header */
 /* Top__menu */
 header{
@@ -18,11 +24,6 @@ header{
 .gnd__bg{
   width: 100%;
   background-color: #7f7f7f;
-}
-.inner{
-  max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
 }
 
 .inner .gnd{
@@ -146,12 +147,10 @@ background-color: antiquewhite;
 }
 .inner .best__case{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+ 
+}
 
-}
-.inner .best__case > div > a > img{
-  margin-right: 24px;
-}
 .inner .best__case > div{
   text-align: center;
 }
@@ -164,3 +163,4 @@ font-size: 20px;
 .inner .best__case > div > p:last-child{
   font-size: 15px;
 }
+
