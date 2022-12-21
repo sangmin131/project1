@@ -1,6 +1,7 @@
 /* 공통스타일 */
 *{
   box-sizing: border-box;
+  user-select: none;
 }
 a{
   text-decoration: none;
@@ -18,6 +19,7 @@ p{
   margin: 0 auto;
   position: relative;
 }
+
 
 /* header */
 /* Top__menu */
@@ -107,10 +109,9 @@ header{
 }
 .lnb .main__menu > li a{
   color: #f2f2f2;
+  white-space: nowrap
 }
-/* .lnb .main__menu > li:first-child{
-  padding-left: 0;
-} */
+
 .lnb .icon{
   display: flex;
   text-align: center;
@@ -130,6 +131,8 @@ header{
 .lnb .icon > a:hover{
   cursor: pointer;
 }
+
+
 
 /* Sub__menu */
 .main__menu .sub__menu{
@@ -155,7 +158,7 @@ header{
   background-color: rgb(216, 84, 84);
 }
 .Middle > p{
-height: 150px;
+height: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -163,8 +166,11 @@ font-size: 50px;
 font-family:Nanum Pen Script, cursive, sans-serif;
 }
 .inner .best__case{
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+ 
  
 }
 .inner .best__case > div{
@@ -185,6 +191,11 @@ font-size: 20px;
 }
 .inner .best__case .best1{
   color: rgb(0, 0, 0);
+  
+}
+.inner .best__case .best1:hover{
+  transform: scale(1.1);
+  z-index: 9;
 }
 .inner .best__case .best1 .text__change{
   color: rgb(255, 1, 1);
@@ -201,6 +212,10 @@ font-size: 20px;
 .inner .best__case .best2{
   color: rgb(0, 0, 0);
 }
+.inner .best__case .best2:hover{
+  transform: scale(1.1);
+  z-index: 9;
+}
 .inner .best__case .best2 .text__change{
   color: rgb(255, 1, 1);
   display: flex;
@@ -216,6 +231,10 @@ font-size: 20px;
 .inner .best__case .best3{
   color: rgb(0, 0, 0);
 }
+.inner .best__case .best3:hover{
+  transform: scale(1.1);
+  z-index: 9;
+}
 .inner .best__case .best3 .text__change{
   color: rgb(255, 1, 1);
   display: flex;
@@ -225,6 +244,9 @@ font-size: 20px;
   text-decoration:line-through;
   color: #7f7f7f
 }
+
+
+
 /* 슬라이더 */
 .promotion {
   width: 100%;
@@ -236,6 +258,7 @@ font-size: 20px;
 .promotion .swiper{
   flex-shrink: 0;
 }
+
 .promotion .swiper .swiper-wrapper{
   width:100%;
 
@@ -243,4 +266,200 @@ font-size: 20px;
 
 .promotion .swiper .swiper-wrapper .swiper-slide > img{
   width:100%;
+}
+.promotion .swiper-button-prev::after,
+.promotion .swiper-button-next::after {
+  display: none;
+}
+
+
+
+
+/* phones */
+.phone__model .hot{
+  font-size: 35px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: pink;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+.phone__model .inner .phone__group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.phone__model .inner .phone__group > a img:hover{
+  transform: scale(1.1,1.1);
+  transition: transform .1s;
+  
+
+}
+.phone__model .inner .phone__group > a img:hover .image-box{
+display: block;
+}
+
+
+
+/* 더보기 버튼 */
+.phone__model .inner{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  margin: 20px 0;
+  background-color: red;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.2s ;
+  background: #5DC8CD;
+}
+.btn > a{
+  font-size: 23px;
+  color: #fff;
+}
+
+.btn:hover{
+
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+  }
+  
+
+
+
+
+
+/* 푸터영역 */
+
+footer{
+  background-color: #272727;
+  border-top: 1px solid #333;
+  height: 100px;
+  position: relative;
+}
+
+footer .inner .menu{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+footer .inner .menu a{
+  color: #fff;
+  font-size: 12px;
+}
+footer .inner .menu a:hover{
+  color: red;
+
+}
+footer .info{
+  color: #fff;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer .sns{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+
+
+footer .sns > a > img{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px; 
+}
+footer .sns > a:first-child{
+  margin-left: 40px;
+}
+
+
+footer .sns > a:last-child{
+  margin-right: 40px;
+}
+
+footer .copyright{
+  margin-top: 10px;
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* 반응형 만들기 */
+
+
+.gnd .btn-hamburger{
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 75px;
+}
+.gnd .btn-hamburger > span{
+  font-size: 50px;
+  color: #333;
+}
+.gnd .btn-hamburger > span:active{
+  color: #fff;
+}
+
+@media screen and (max-width:767px){
+
+.lnb .main__menu{
+  flex-direction: column;
+}
+  .gnd .btn-hamburger{
+  display: block;
+}
+.inner .gnd > div {
+  display: none;
+}
+.lnb{
+  display: none;
+}
+.main__bg{
+  display: none;
+}
+.best__case .best1{
+  width: calc(100% - 6px);
+  
+ 
+}
+.best__case .best2{
+  width: calc(100% - 6px);
+  
+ 
+}
+.best__case .best3{
+  width: calc(100% - 6px);
+  
+ 
+}
+.lnb.active{
+  display: block;
+ }
 }
