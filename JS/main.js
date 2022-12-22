@@ -18,7 +18,7 @@ new Swiper('.promotion .swiper', {
 });
 const btnHamburger = document.querySelector('.btn-hamburger');
 const navEl = document.querySelector('.lnb');
-const btnGroup = document.querySelector('.gnd > div');
+const btnGroup = document.querySelector('.gnb > div');
 
 
 btnHamburger.addEventListener('click', function(){
