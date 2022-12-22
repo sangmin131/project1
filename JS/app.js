@@ -1,17 +1,14 @@
-setInterval(createSnow, 100);
- 
-function createSnow() {
-   const snow = document.createElement('i');
-   snow.classList.add('fas');
-   snow.classList.add('fa-snowflake');
-   snow.style.left = Math.random() * window.innerWidth + 'px';
-   snow.style.animationDirection = Math.random() * 3 + 2 + 's';
-   snow.style.opacity = Math.random();
-   snow.style.fontSize = Math.random() * 10 + 10 + 'px';
- 
-   document.body.appendChild(snow);
- 
-   setTimeout(() => {
-      snow.remove();
-   }, 10000);
-}
+[js]
+
+  function aaa(){
+            const ccc = document.createElement("div");
+            ccc.classList.add('snow'); //classList를 통해 클래스 목록에 접근, add 지정한 클래스를 추가하겠다
+            ccc.style.marginLeft = bbb() + 'px'; 
+            document.body.appendChild(ccc);
+        }
+        function bbb(){
+            return Math.floor(Math.random() * window.innerWidth);
+        }
+        for(let i=0; i<300; i++){ //300개 무한대 함수
+            aaa();
+        }

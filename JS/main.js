@@ -20,7 +20,9 @@ const btnHamburger = document.querySelector('.btn-hamburger');
 const navEl = document.querySelector('.lnb');
 const btnGroup = document.querySelector('.gnd > div');
 
+
 btnHamburger.addEventListener('click', function(){
     navEl.classList.toggle('active');
     btnGroup.classList.toggle('active');
 });
+

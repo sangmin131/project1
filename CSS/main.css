@@ -98,7 +98,7 @@ header{
 
 .lnb .main__menu .sub__menu{
   display: none;
-  z-index: 1;
+  z-index: 8;
   width:100%;
   position: absolute;
   left: 0;
@@ -195,7 +195,6 @@ font-size: 20px;
 }
 .inner .best__case .best1:hover{
   transform: scale(1.1);
-  z-index: 9;
 }
 .inner .best__case .best1 .text__change{
   color: rgb(255, 1, 1);
@@ -214,7 +213,6 @@ font-size: 20px;
 }
 .inner .best__case .best2:hover{
   transform: scale(1.1);
-  z-index: 9;
 }
 .inner .best__case .best2 .text__change{
   color: rgb(255, 1, 1);
@@ -233,7 +231,6 @@ font-size: 20px;
 }
 .inner .best__case .best3:hover{
   transform: scale(1.1);
-  z-index: 9;
 }
 .inner .best__case .best3 .text__change{
   color: rgb(255, 1, 1);
@@ -292,17 +289,40 @@ font-size: 20px;
   flex-wrap: wrap;
   gap: 20px;
 }
+.phone__model .inner .phone__group > a img{
+  position: relative;
+}
 .phone__model .inner .phone__group > a img:hover{
   transform: scale(1.1,1.1);
   transition: transform .1s;
+  opacity: 0.5;
   
 
 }
-.phone__model .inner .phone__group > a img:hover .image-box{
-display: block;
+.phone__model .inner .phone__group > a:nth-child(1):hover .hover__menu{
+  display: block; 
 }
 
 
+/* 호버시 이름 가격 나오기 */
+.hover__menu{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  text-align: center;
+  top: 50px;
+  margin: 0 auto;
+  display: none;
+}
+.hover__menu .hover__a p:first-child{
+  font-size: 30px;
+  color: red;
+
+}
+.phone__model .inner .hover .hover__a p+p{
+  font-size: 20px;
+}
 
 /* 더보기 버튼 */
 .phone__model .inner{
@@ -429,16 +449,46 @@ footer .copyright{
 
 @media screen and (max-width:767px){
 
-.lnb .main__menu{
-  flex-direction: column;
-}
+  .lnb{
+    display: none;
+  }
+  .lnb .icon{
+    display: none;
+  }
+  .lnb__bg > .inner > .lnb .main__menu .sub__menu{
+      display: none;
+    }
+  .lnb .main__menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    z-index: 9;
+    border-radius: 0 0 15px 15px;
+    
+  }
+  .lnb__bg > .inner > .lnb .main__menu li:hover{
+    
+    text-align: center;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .lnb__bg > .inner > .lnb .main__menu li:hover a{
+    width: 100%;
+    color: #333
+  }
+
+  .lnb.active{
+  display: block;
+  }
   .gnd .btn-hamburger{
   display: block;
 }
 .inner .gnd > div {
-  display: none;
-}
-.lnb{
   display: none;
 }
 .main__bg{
@@ -459,7 +509,7 @@ footer .copyright{
   
  
 }
-.lnb.active{
-  display: block;
- }
+
+ 
+
 }
