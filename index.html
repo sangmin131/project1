@@ -1,266 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>케이스 나라</title>
-    <!-- 스타일 초기화 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- 애니메이션 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <!-- 머트리얼 연결 -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <!-- 구글폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <!-- css연결 -->
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/main.css">
-    <!-- 슬라이드 라이브러리 연결 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- js연결 -->
-    <script defer src="./JS/app.js"></script>
-    <script defer src="./JS/main.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>케이스 나라</title>
+  <!-- 스타일 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- 애니메이션 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <!-- 머트리얼 연결 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <!-- 구글폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <!-- css연결 -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/main.css">
+  <!-- 슬라이드 라이브러리 연결 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js연결 -->
+  <script defer src="./JS/app.js"></script>
+  <script defer src="./JS/main.js"></script>
 </head>
+
 <body>
-    <header>
-<div class="gnd__bg">
-    <div class="inner">
-        
-        <nav class="gnd">
-            <a href="#">
-            <img src="./image/로고.png" alt="logo" class="logo"></a>
-            <div>
-                <a href="#">로그인</a>
-                <p>/</p>
-                <a href="#">회원가입</a>
-            </div>
-            
-            <a href="#" class="btn-hamburger">
-                <span class="material-icons">menu</span>
-            </a>
-        </nav>
-    </div>
+<header>
+<div class="gnb__bg">
+  <div class="inner">
+    <nav class="gnb">
+      <a href="#">
+        <img src="./image/로고.png" alt="logo" class="logo">
+      </a>
+      <div>
+        <a href="#">로그인</a>
+        <p>/</p>
+        <a href="#">회원가입</a>
+      </div>
+      <a href="#" class="btn-hamburger">
+      <span class="material-icons">menu</span>
+      </a>
+    </nav>
+  </div>
 </div>
+
 <div class="lnb__bg">
-    <div class="inner">
-        <nav class="lnb">
-                <ul class="main__menu">
-                    <li><a href="#">BEST</a>
-                        <ul class="sub__menu">
-                            <li><a href="#">1 + 1 Hot!!</a></li>
-                            <li><a href="#">솔로 케이스</a></li>
-                            <li><a href="#">커플 케이스</a></li>
-                            <li><a href="#">크리스마스 이벤트</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">1+1이벤트</a>
-                        <ul class="sub__menu">
-                            <li>
-                                <a href="#">공룡 케이스</a>
-                            </li>
-                            <li>
-                                <a href="#">호랑이 케이스</a>
-                            </li>
-                            <li>
-                                <a href="#">티라노 케이스</a>
-                            </li>
-                            <li>
-                                <a href="#">트리케라톱스 케이스</a>
-                            </li>
-                            <li>
-                                <a href="#">투명 케이스</a>
-                            </li>
-                            <li>
-                                <a href="#">하드 케이스</a>
-                            </li>
-                            <li>
-                                <a href="#">랜덤 케이스</a>
-                            </li>
-                        </ul></li>
-                        <li><a href="#">갤럭시</a>
-                            <ul class="sub__menu">
-                                <li>
-                                    <a href="#">Z 플립</a></li>
-                                    <li><a href="#">Z 폴더</a></li>
-                                    <li><a href="#">S 20</a></li>
-                                    <li><a href="#">NOTE 20</a></li>
-                                    <li><a href="#">S 22</a></li>
-                                </ul></li>
-                                <li><a href="#">아이폰</a>
-                                    <ul class="sub__menu">
-                                        <li><a href="#">Ipohoe SE</a></li>
-                                        <li><a href="#">Ipohoe XR</a></li>
-                                        <li><a href="#">Ipohoe 11</a></li>
-                                        <li><a href="#">Ipohoe 12</a></li>
-                                        <li><a href="#">Ipohoe 13</a></li>
-                                        <li><a href="#">Ipohoe 14</a></li>
-                                    </ul></li>
-                                    <li><a href="#">스마트톡</a>
-                                    </li>
-                                    <li><a href="#">필름</a>
-                                        <ul class="sub__menu">
-                                            <li><a href="#">1 + 1 필름</a></li>
-                                            <li><a href="#">방탄 필름</a></li>
-                                            <li><a href="#">우라늄 필름</a></li>
-                                            <li><a href="#">종이 필름</a></li>
-                                        </ul></li>
-                                    </ul>
-                <div class="icon">
-                    <input type="text" placeholder="검색어를 입력하세요.">
-                    <a type='button' class="material-icons">search</a>
-                    <a type='button' class="material-icons">shopping_bag</a>
-                </div>
-            </nav>
+  <div class="inner">
+    <nav class="lnb">
+      <ul class="main__menu">
+        <li><a href="#">BEST</a>
+          <ul class="sub__menu">
+            <li><a href="#">1 + 1 Hot!!</a></li>
+            <li><a href="#">솔로 케이스</a></li>
+            <li><a href="#">커플 케이스</a></li>
+            <li><a href="#">크리스마스 이벤트</a></li>
+          </ul>
+        </li>
+        <li><a href="#">1+1이벤트</a>
+          <ul class="sub__menu">
+            <li>
+              <a href="#">공룡 케이스</a>
+            </li>
+            <li>
+              <a href="#">호랑이 케이스</a>
+            </li>
+            <li>
+              <a href="#">티라노 케이스</a>
+            </li>
+            <li>
+              <a href="#">트리케라톱스 케이스</a>
+            </li>
+            <li>
+              <a href="#">투명 케이스</a>
+            </li>
+            <li>
+              <a href="#">하드 케이스</a>
+            </li>
+            <li>
+              <a href="#">랜덤 케이스</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">갤럭시</a>
+          <ul class="sub__menu">
+            <li>
+              <a href="#">Z 플립</a>
+            </li>
+            <li>
+              <a href="#">Z 폴더</a>
+            </li>
+            <li>
+              <a href="#">S 20</a>
+            </li>
+            <li>
+              <a href="#">NOTE 20</a>
+            </li>
+            <li>
+              <a href="#">S 22</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">아이폰</a>
+          <ul class="sub__menu">
+            <li>
+              <a href="#">Ipohoe SE</a>
+            </li>
+            <li>
+              <a href="#">Ipohoe XR</a>
+            </li>
+            <li>
+              <a href="#">Ipohoe 11</a>
+            </li>
+            <li>
+              <a href="#">Ipohoe 12</a>
+            </li>
+            <li>
+              <a href="#">Ipohoe 13</a>
+            </li>
+            <li>
+              <a href="#">Ipohoe 14</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">스마트톡</a>
+        </li>
+        <li>
+          <a href="#">필름</a>
+          <ul class="sub__menu">
+            <li>
+              <a href="#">1 + 1 필름</a>
+            </li>
+            <li>
+              <a href="#">방탄 필름</a>
+            </li>
+            <li>
+              <a href="#">우라늄 필름</a>
+            </li>
+            <li>
+              <a href="#">종이 필름</a>
+            </li>
+          </ul>
+        </li>
+        <div class="icon">
+          <input type="text" placeholder="검색어를 입력하세요.">
+          <a type='button' class="material-icons">search</a>
+          <a type='button' class="material-icons">shopping_bag</a>
         </div>
-    </div>
+      </ul>
+    </nav>
+  </div>
+</div>
 </header>
-<section class="snow">
-</section>
+
 <section class="main__bg">
-    <div class="inner">
-        <a href="#">
-            <img src="./image/메인배너.png" alt="Event">
-        </a>
-    </div>
+  <div class="inner">
+    <a href="#">
+      <img src="./image/메인배너.png" alt="Event">
+    </a>
+  </div>
 </section>
 <section>
-    <div class="Middle">
-        <p>BEST!!</p>
-    </div>
-    <div class="inner">
-        <nav class="best__case">
-            <div class="best1">
-                <a href="#"><img src="./image/두리 폰 케이스.png" alt="두리 폰 케이스"></a>
-                <p class="title">두리 폰 케이스 800여종!!</p>
-                <div class="text__change">
-                    <p>20000원&nbsp</p>
-                    <p>&nbsp-> 10000원</p>
-                </div>
-                <p> 전 기종</p>
-            </div>
-            <div class="best2">
-                <a href="#"><img src="./image/공룡 커플 폰 케이스.png" alt="공룡 커플 케이스"></a>
-                <p class="title">공룡 커플 케이스!!</p>
-                <div class="text__change">
-                    <p>20000원&nbsp</p>
-                    <p>&nbsp-> 10000원</p>
-                </div>
-                <p> 전 기종</p>
-            </div>
-            <div class="best3">
-                <a href="#"><img src="./image/호랑이 폰 케이스.png" alt="타이거 폰 케이스"></a>
-                <p class="title">타이거 폰 케이스!!</p>
-                <div class="text__change">
-                    <p>20000원&nbsp</p>
-                    <p>&nbsp-> 10000원</p>
-
-                </div>
-                <p> 전 기종</p>
-            </div>
-        </nav>
-    </div>
+  <div class="Middle">
+    <p>BEST!!</p>
+  </div>
+  <div class="inner">
+    <nav class="best__case">
+      <div class="best1">
+        <a href="#"><img src="./image/두리 폰 케이스.png" alt="두리 폰 케이스"></a>
+        <p class="title">두리 폰 케이스 800여종!!</p>
+        <div class="text__change">
+          <p>20000원&nbsp</p>
+          <p>&nbsp-> 10000원</p>
+        </div>
+        <p> 전 기종</p>
+      </div>
+      <div class="best2">
+        <a href="#"><img src="./image/공룡 커플 폰 케이스.png" alt="공룡 커플 케이스"></a>
+        <p class="title">공룡 커플 케이스!!</p>
+        <div class="text__change">
+          <p>20000원&nbsp</p>
+          <p>&nbsp-> 10000원</p>
+        </div>
+          <p> 전 기종</p>
+      </div>
+      <div class="best3">
+        <a href="#"><img src="./image/호랑이 폰 케이스.png" alt="타이거 폰 케이스"></a>
+          <p class="title">타이거 폰 케이스!!</p>
+          <div class="text__change">
+            <p>20000원&nbsp</p>
+            <p>&nbsp-> 10000원</p>
+          </div>
+        <p> 전 기종</p>
+      </div>
+    </nav>
+  </div>
 </section>
 <section class="promotion">
-    <div class="swiper">
-        <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="./image/카카오톡 친구추가하고.png" alt="카카오톡 친구추가">
-        </div>
-        <div class="swiper-slide">
-            <img src="./image/아이폰 슬라이드.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="./image/갤락시qosj.png" alt="">
-        </div>
-        </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./image/카카오톡 친구추가하고.png" alt="카카오톡 친구추가">
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/아이폰 슬라이드.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/갤락시qosj.png" alt="">
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev">
-        <span class="material-icons"><img src="./image/left.png" alt=""></span>
-    </div>
-    <div class="swiper-button-next">
-        <span class="material-icons"><img src="./image/right.png" alt=""></span>
-    </div>
+  </div>
+  <div class="swiper-pagination">
+  </div>
+  <div class="swiper-button-prev">
+    <span class="material-icons"><img src="./image/left.png" alt=""></span>
+  </div>
+  <div class="swiper-button-next">
+    <span class="material-icons"><img src="./image/right.png" alt=""></span>
+  </div>
 </section>
 
 <section class="phone__model">
-    <div class="hot">
-        <p>Hot!! 상품</p>
-    </div>
-    <div class="inner">
-        <div class="phone__group">
-            <a href=""><img src="./image/1+1투명케이스.png" alt="phone">
-                <div class="hover__menu">
-                    <div class="hover__a">
-                        <p>투명 케이스</p>
-                        <p>20000원</p>
-                    </div>
-                </div></a>
-            <a href=""><img src="./image/곰돌이케이스.png" alt="phone"></a>
-            <a href=""><img src="./image/공룡그립톡.png" alt="phone"></a>
-            <a href=""><img src="./image/토끼케이스.png" alt="phone"></a>
-            <a href=""><img src="./image/보호필름.png" alt="phone"></a>
-            <a href=""><img src="./image/꽃케이스.png" alt="phone"></a>
-            <a href=""><img src="./image/크리스마스곰.png" alt="phone"></a>
-            <a href=""><img src="./image/아이폰투명케이스.png" alt="phone"></a>
-           
+  <div class="hot">
+    <p>Hot!! 상품</p>
+  </div>
+  <div class="inner">
+    <div class="phone__group">
+      <a href=""><img src="./image/1+1투명케이스.png" alt="phone">
+        <div class="hover__menu">
+          <div class="hover__a">
+            <p>투명 케이스</p>
+            <p>20000원</p>
+          </div>
         </div>
-      
-        
-
+      </a>
+      <a href=""><img src="./image/곰돌이케이스.png" alt="phone"></a>
+      <a href=""><img src="./image/공룡그립톡.png" alt="phone"></a>
+      <a href=""><img src="./image/토끼케이스.png" alt="phone"></a>
+      <a href=""><img src="./image/보호필름.png" alt="phone"></a>
+      <a href=""><img src="./image/꽃케이스.png" alt="phone"></a>
+      <a href=""><img src="./image/크리스마스곰.png" alt="phone"></a>
+      <a href=""><img src="./image/아이폰투명케이스.png" alt="phone"></a>
     </div>
-    <div class="inner">
-        <div class="btn">
-            <a href="" class="button">더보러가기</a>
-        </div>
-
+  </div>
+  <div class="inner">
+    <div class="btn">
+      <a href="" class="button">더보러가기</a>
     </div>
-
+  </div>
 </section>
 
+<!-- 푸터  -->
 <footer>
+  <div class="inner">
+    <ul class="menu">
+      <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+      <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+      <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+      <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+      <li><a href="javascript:void(0)">카드 이용약관</a></li>
+      <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+    </ul>
+  </div>
     <div class="inner">
-        <ul class="menu">
-            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
-            <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
-            <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-            <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-            <li><a href="javascript:void(0)">카드 이용약관</a></li>
-            <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
-          </ul>
-        </div>
-    <div class="inner">
-        
-        <div class="sns">
-            <a href="#"><img src="./image/face.png" alt="facebook"></a>
-            <a href="#"><img src="./image/instar.png" alt="ins"></a>
-            <a href="#"><img src="./image/twiter.png" alt="tw"></a>
-            <a href="#"><img src="./image/youtube.png" alt="yout"></a>
-            
-        </div>
+      <div class="sns">
+        <a href="#"><img src="./image/face.png" alt="facebook"></a>
+        <a href="#"><img src="./image/instar.png" alt="ins"></a>
+        <a href="#"><img src="./image/twiter.png" alt="tw"></a>
+        <a href="#"><img src="./image/youtube.png" alt="yout"></a>
+      </div>
         <div class="info">
-            <span>사업자등록번호 123-45-678901</span>
-            <span>(주)Case world</span>
-            <span>TEL : 02) 1234-5678</span>
-            <span>개인정보 책임자: 이상민</span>
+          <span>사업자등록번호 123-45-678901</span>
+          <span>(주)Case world</span>
+          <span>TEL : 02) 1234-5678</span>
+          <span>개인정보 책임자: 이상민</span>
         </div>
-
     </div>       
-
-      <span class="copyright">
-        &copy; <span class="this-year"></span>
-        Case world Company. All Rights Reserved.
-
-      </span>
+  <span class="copyright">
+    &copy; <span class="this-year"></span>
+    Case world Company. All Rights Reserved.
+  </span>
 </footer>
-
-
-<!-- 선생님한테 물어볼꺼 -->
-<!-- 메인 메뉴 줄일때 글씨 올라가는거 -->
-
 </body>
 </html>
