@@ -1,0 +1,40 @@
+.banner .main__banner{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.banner .main__banner a > img{
+  width: 100%;
+}
+
+.middle__text{
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0;
+  color: rgb(95, 157, 252);
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.oneplus__one .inner .one_plus{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.oneplus__one .inner .one_plus a >img{
+  width: 250px;
+}
+.oneplus__one .inner .page_number .number{
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.oneplus__one .inner .page_number .number li > a{
+  font-family: Nanum Pen Script, cursive, sans-serif;
+  font-size: 25px;
+  padding: 0 20px;
+  color: #000;
+}
+.oneplus__one .inner .page_number .number li > a:hover{
+  color: rgb(255, 0, 0);
+}
