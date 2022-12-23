@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>케이스 나라</title>
+    <!-- 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 애니메이션 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- 머트리얼 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!-- css연결 -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/film.css">
+    <!-- 슬라이드 라이브러리 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js연결 -->
+    <script defer src="./JS/film.js"></script>
+    <script defer src="./JS/youtube.js"></script>
+</head>
+<body>
+  <!-- header -->
+<header>
+    <div class="gnb__bg">
+      <div class="inner">
+        <nav class="gnb">
+          <a href="http://127.0.0.1:5500/project1/index.html">
+            <img src="./image/로고.png" alt="logo" class="logo">
+          </a>
+          <div>
+            <a href="#">로그인</a>
+            <p>/</p>
+            <a href="#">회원가입</a>
+          </div>
+          <a href="#" class="btn-hamburger">
+          <span class="material-icons">menu</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="lnb__bg">
+      <div class="inner">
+        <nav class="lnb">
+          <ul class="main__menu">
+            <li><a href="#">BEST</a>
+              <ul class="sub__menu">
+                <li><a href="http://127.0.0.1:5500/project1/sub_1+1hot_page.html#">1 + 1 Hot!!</a></li>
+                <li><a href="#">솔로 케이스</a></li>
+                <li><a href="#">커플 케이스</a></li>
+                <li><a href="#">크리스마스 이벤트</a></li>
+              </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5500/project1/sub_1+1hot_page.html#">1+1이벤트</a>
+              <ul class="sub__menu">
+                <li>
+                  <a href="#">공룡 케이스</a>
+                </li>
+                <li>
+                  <a href="#">호랑이 케이스</a>
+                </li>
+                <li>
+                  <a href="#">티라노 케이스</a>
+                </li>
+                <li>
+                  <a href="#">트리케라톱스 케이스</a>
+                </li>
+                <li>
+                  <a href="#">투명 케이스</a>
+                </li>
+                <li>
+                  <a href="#">하드 케이스</a>
+                </li>
+                <li>
+                  <a href="#">랜덤 케이스</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">갤럭시</a>
+              <ul class="sub__menu">
+                <li>
+                  <a href="#">Z 플립</a>
+                </li>
+                <li>
+                  <a href="#">Z 폴더</a>
+                </li>
+                <li>
+                  <a href="#">S 20</a>
+                </li>
+                <li>
+                  <a href="#">NOTE 20</a>
+                </li>
+                <li>
+                  <a href="#">S 22</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">아이폰</a>
+              <ul class="sub__menu">
+                <li>
+                  <a href="#">Ipohoe SE</a>
+                </li>
+                <li>
+                  <a href="#">Ipohoe XR</a>
+                </li>
+                <li>
+                  <a href="#">Ipohoe 11</a>
+                </li>
+                <li>
+                  <a href="#">Ipohoe 12</a>
+                </li>
+                <li>
+                  <a href="#">Ipohoe 13</a>
+                </li>
+                <li>
+                  <a href="#">Ipohoe 14</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스마트톡</a>
+            </li>
+            <li>
+              <a href="#">필름</a>
+              <ul class="sub__menu">
+                <li>
+                  <a href="#">1 + 1 필름</a>
+                </li>
+                <li>
+                  <a href="#">방탄 필름</a>
+                </li>
+                <li>
+                  <a href="#">우라늄 필름</a>
+                </li>
+                <li>
+                  <a href="#">종이 필름</a>
+                </li>
+              </ul>
+            </li>
+            <div class="icon">
+              <input type="text" placeholder="검색어를 입력하세요.">
+              <a type='button' class="material-icons">search</a>
+              <a type='button' class="material-icons">shopping_bag</a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+</header>
+<section class="protection">
+  <div class="inner">
+    <div class="film">
+      <a href="#"><img src="./image/보호필름.jpg" alt="보호필름"></a>
+    </div>
+    <div class="film__text">
+      <div class="film__title">
+        <h1>1 + 1 방탄 보호 필름</h1>
+        <h2>20000원</h2>
+      </div>
+      <div class="sub__title">
+        <span>상품명</span>
+        <span>1+1방탄보호필름 풀 커버 전 기종 보유중! </span>
+      </div>
+      <div class="sub__title">
+        <span>제조사</span>
+        <span>중국(중국산) </span>
+      </div>
+      <div class="sub__title">
+        <span>적립금</span>
+        <span>&nbsp;20원 </span>
+      </div>
+      <div class="sub__title">
+        <span>브랜드</span>
+        <span>상민엔터테이먼트 </span>
+      </div>
+      <div class="sub__title">
+        <span>배송방법</span>
+        <span>택배</span>
+      </div>
+      <div class="sub__title">
+        <span>배송비</span>
+        <span>3000원</span>
+      </div>
+      <div class="check__box">
+        <div class="select">
+          <div class="selected">
+            <div class="selected-value">[필수] 옵션을 선택해 주세요.</div>
+            <span class="material-icons">
+              south
+              </span>
+          </div>
+          <ul class="check_menu">
+            <li class="option">종이 필름 1 + 1</li>
+            <li class="option">방탄 필름 1 + 1 (+5000원)</li>
+            <li class="option">우라늄 필름 1 + 1 (+10000원)</li>
+            <li class="option">슈퍼 우라늄 필름 1 + 1 (+20000원)</li>
+            <li class="option">다이아몬드 슈퍼 울트라 필름 1 + 1 (+50000원)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="check__box_">
+        <div class="select">
+          <div class="selected">
+            <div class="selected-value">[추가] 옵션을 선택해 주세요.</div>
+            <span class="material-icons">
+              south
+              </span>
+          </div>
+          <ul class="check_menu">
+            <li class="option">랜덤 그립톡 (+5000원)</li>
+            <li class="option">랜덤 케이스 1 + 1 (+1000원)</li>
+            <li class="option">곰돌이 에어팟 케이스 (+10000원)</li>
+            <li class="option">곰돌이 버즈 케이스 (+10000원)</li>
+            <li class="option">기부하기 (+50000원)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- YOUTUBE -->
+  <section class="youtube">
+    <!-- 영상이 출력될 영역 -->
+    <div class="youtube__area">
+      <!-- 실제 재생될 요소 -->
+      <div id="player"></div>
+    </div>
+
+    <!-- 섹션 전체를 덮을 커버 요소 -->
+    <div class="youtube__cover"></div>
+  </section>
+
+</body>
+<!-- 푸터  -->
+<footer>
+  <div class="inner">
+    <ul class="menu">
+      <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+      <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+      <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+      <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+      <li><a href="javascript:void(0)">카드 이용약관</a></li>
+      <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+    </ul>
+  </div>
+    <div class="inner">
+      <div class="sns">
+        <a href="#"><img src="./image/face.png" alt="facebook"></a>
+        <a href="#"><img src="./image/instar.png" alt="ins"></a>
+        <a href="#"><img src="./image/twiter.png" alt="tw"></a>
+        <a href="#"><img src="./image/youtube.png" alt="yout"></a>
+      </div>
+        <div class="info">
+          <span>사업자등록번호 123-45-678901</span>
+          <span>(주)Case world</span>
+          <span>TEL : 02) 1234-5678</span>
+          <span>개인정보 책임자: 이상민</span>
+        </div>
+    </div>       
+  <span class="copyright">
+    &copy; <span class="this-year"></span>
+    Case world Company. All Rights Reserved.
+  </span>
+</footer>
+</html>

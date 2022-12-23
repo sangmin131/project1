@@ -1,0 +1,171 @@
+.protection{
+  padding-top: 50px;
+  font-family: Nanum Pen Script, cursive, sans-serif;
+
+}
+.protection .inner{
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.protection .inner .film{
+  width: 700px;
+  height: 700px;
+  border: solid 1px #e5e5e5;
+}
+.protection .inner .film > a{
+  display: flex;
+  justify-content: center;
+}
+
+.protection .inner .film > a > img{
+  width: 650px;
+  margin-top: 20px;
+
+}
+
+.protection .inner .film__text .film__title h1{
+  padding-top: 10px;
+  color: #5a5a5a;
+  font-size: 60px;
+  text-align: center;
+}
+.protection .inner .film__text .film__title h2{
+  color: rgb(255, 8, 8);
+  font-size: 40px;
+  text-align: start;
+  padding: 30px 0;
+}
+.protection .inner .film__text .sub__title{
+  font-size: 18px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: start;
+}
+.protection .inner .film__text .sub__title span:first-child{
+  padding: 0 30% 0 0;
+}
+.protection .inner .film__text .sub__title:nth-child(6) span:first-child{
+  padding-right: 25%;
+}
+
+
+/* 체크박스 */
+.check__box{
+  padding: 50px 0;
+}
+
+.check_menu {
+  list-style-type: none;
+  padding-left: 0px;
+  z-index: 9;
+  font-size: 20px;
+}
+.check_menu > li{
+  font-size: 20px;
+}
+
+
+.select {
+  display: inline-block;
+  width: 320px;
+  border: 1px solid #999;
+}
+
+.select .selected {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 5px;
+}
+
+.select .selected .selected-value {
+  max-width: 90px;
+  margin-top: 3px;
+}
+
+.select .selected .arrow {
+  width: 24px;
+  background: url("https://uxwing.com/wp-content/themes/uxwing/download/02-arrow-direction/arrow-bottom.png") no-repeat 70% 50%;
+  background-size: 50% 50%;
+}
+
+.select ul li,
+.select .selected .selected-value {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.select ul {
+  width: 320px;
+  border: 1px solid #999;
+  display: none;
+  position: absolute;
+  background: #fff;
+  border-top: none;
+  margin: 1px 0 0 -1px;
+  cursor: pointer;
+}
+
+.select.active ul {
+  display: initial;
+}
+
+.select ul li {
+  padding: 8px 5px;
+}
+
+.select ul li:hover {
+  background: rgba(168, 156, 235, 0.35)
+}
+/* YOUTUBE */
+.youtube {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #333;
+
+  /* 영상 출력 넘치는 부분 숨기기 */
+  overflow: hidden;
+}
+.youtube .youtube__area {
+  --width: 1920px;
+  --height: 1080px;
+
+  position: absolute;
+  /* 유튜브 섹션 가운데 기준으로 배치 */
+  left: 25%;
+  top: 50%;
+  /* 유튜브의 표준 영상 비율 16:9 */
+  width: var(--width);
+  height: var(--height);
+  /* background-color: orange; */
+
+  /* margin을 이용하여 정가운데 옮기기 */
+  margin-left: calc(var(--width) / -2);
+  margin-top: calc(var(--height) / -2);
+
+  /* 중복된 스타일 변수로 선언 */
+  /* 
+    너비, 높이를 수정할 경우 총 4곳 수정 필요 => CSS 변수 선언으로 재사용
+    2개의 대시(--)기호로 시작하고 원하는 변수명 지정: CSS 값
+    선언된 변수는 CSS var() 함수를 통해 사용
+  */
+}
+#player {
+  /* 부모 영역에 가득 차도록 지정 */
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.youtube .youtube__cover {
+  /* 섹션 영역 전체를 덮어버림 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}

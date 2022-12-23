@@ -272,6 +272,7 @@ header{
   transition: transform .1s;
   opacity: 0.5;
 }
+/* 호버 대상 */
 .phone__model .inner .phone__group > a:nth-child(1):hover .hover__menu{
   display: block; 
 }
@@ -281,19 +282,19 @@ header{
 .phone__model .inner .phone__group > a:nth-child(3):hover .hover__menu__{
   display: block; 
 }
-.phone__model .inner .phone__group > a:nth-child(4):hover .hover__menu{
+.phone__model .inner .phone__group > a:nth-child(4):hover .hover__menu___{
   display: block; 
 }
-.phone__model .inner .phone__group > a:nth-child(5):hover .hover__menu{
+.phone__model .inner .phone__group > a:nth-child(5):hover .hover__menu____{
   display: block; 
 }
-.phone__model .inner .phone__group > a:nth-child(6):hover .hover__menu{
+.phone__model .inner .phone__group > a:nth-child(6):hover .hover__menu_____{
   display: block; 
 }
-.phone__model .inner .phone__group > a:nth-child(7):hover .hover__menu{
+.phone__model .inner .phone__group > a:nth-child(7):hover .hover__menu______{
   display: block; 
 }
-.phone__model .inner .phone__group > a:nth-child(8):hover .hover__menu{
+.phone__model .inner .phone__group > a:nth-child(8):hover .hover__menu_______{
   display: block; 
 }
 
@@ -337,7 +338,72 @@ header{
   display: none;
   pointer-events: none;
 }
-
+.hover__menu___{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  opacity: 0.9;
+  text-align: center;
+  top: 50px;
+  left: 870px;
+  margin: 0 auto;
+  display: none;
+  pointer-events: none;
+}
+.hover__menu____{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  opacity: 0.9;
+  text-align: center;
+  top: 300px;
+  left: 30px;
+  margin: 0 auto;
+  display: none;
+  pointer-events: none;
+}
+.hover__menu_____{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  opacity: 0.9;
+  text-align: center;
+  top: 300px;
+  left: 310px;
+  margin: 0 auto;
+  display: none;
+  pointer-events: none;
+}
+.hover__menu______{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  opacity: 0.9;
+  text-align: center;
+  top: 300px;
+  left: 590px;
+  margin: 0 auto;
+  display: none;
+  pointer-events: none;
+}
+.hover__menu_______{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  opacity: 0.9;
+  text-align: center;
+  top: 300px;
+  left: 870px;
+  margin: 0 auto;
+  display: none;
+  pointer-events: none;
+}
+/* 상품 제품 명 */
 .hover__menu .hover__a p:nth-child(1){
   font-size: 30px;
   color: rgb(255, 255, 255);
@@ -360,42 +426,42 @@ header{
   line-height: 80px;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
-.hover__menu .hover__a p:nth-child(4){
+.hover__menu___ .hover__a p:nth-child(1){
+  font-size: 30px;
+  color: rgb(255, 54, 148);
+  text-align: center;
+  line-height: 80px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.hover__menu____ .hover__a p:nth-child(1){
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  line-height: 80px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.hover__menu_____ .hover__a p:nth-child(1){
+  font-size: 30px;
+  color: rgb(255, 153, 0);
+  text-align: center;
+  line-height: 80px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.hover__menu______ .hover__a p:nth-child(1){
+  font-size: 30px;
+  color: rgb(0, 182, 82);
+  text-align: center;
+  line-height: 80px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.hover__menu_______ .hover__a p:nth-child(1){
   font-size: 30px;
   color: rgb(255, 255, 255);
   text-align: center;
   line-height: 80px;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
-.hover__menu .hover__a p:nth-child(5){
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  line-height: 80px;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-.hover__menu .hover__a p:nth-child(6){
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  line-height: 80px;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-.hover__menu .hover__a p:nth-child(7){
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  line-height: 80px;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-.hover__menu .hover__a p:nth-child(8){
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  line-height: 80px;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-
+/* 상품 제품 가격 */
 .hover__menu .hover__a p+p{
   font-size: 20px;
   color: #000;
@@ -405,6 +471,26 @@ header{
   color: #000;
 }
 .hover__menu__ .hover__a p+p{
+  font-size: 20px;
+  color: #000;
+}
+.hover__menu___ .hover__a p+p{
+  font-size: 20px;
+  color: #000;
+}
+.hover__menu____ .hover__a p+p{
+  font-size: 20px;
+  color: #000;
+}
+.hover__menu_____ .hover__a p+p{
+  font-size: 20px;
+  color: #000;
+}
+.hover__menu______ .hover__a p+p{
+  font-size: 20px;
+  color: #000;
+}
+.hover__menu_______ .hover__a p+p{
   font-size: 20px;
   color: #000;
 }
@@ -512,7 +598,6 @@ footer .copyright{
 
 
 
-
 /* 반응형 만들기 */
 .gnb .btn-hamburger{
   display: none;
@@ -598,6 +683,9 @@ footer .info{
 footer .info span{
   padding-top: 10px;
 }
+.hover__menu .hover__a{
+  display: none;
+}
 }
 
 /* 768 ~ 1024px */
@@ -670,7 +758,9 @@ footer .info span{
 .best__case .best3 a > img{
   width: 90%;
 }
-
+.hover__menu .hover__a{
+  display: none;
+}
 }
 
 
@@ -679,5 +769,28 @@ footer .info span{
   .lnb .main__menu li{
     padding: 0 43px;
   }
-
+  .phone__model .inner .phone__group > a:nth-child(1):hover .hover__menu{
+    display: none; 
+  }
+  .phone__model .inner .phone__group > a:nth-child(2):hover .hover__menu_{
+    display: none; 
+  }
+  .phone__model .inner .phone__group > a:nth-child(3):hover .hover__menu__{
+    display: none; 
+  }
+  .phone__model .inner .phone__group > a:nth-child(4):hover .hover__menu___{
+    display: none; 
+  }
+  .phone__model .inner .phone__group > a:nth-child(5):hover .hover__menu____{
+    display: none; 
+  }
+  .phone__model .inner .phone__group > a:nth-child(6):hover .hover__menu_____{
+    display: none; 
+  }
+  .phone__model .inner .phone__group > a:nth-child(7):hover .hover__menu______{
+    display: none; 
+  }
+  .phone__model .inner .phone__group > a:nth-child(8):hover .hover__menu_______{
+    display: none; 
+  }
 }
