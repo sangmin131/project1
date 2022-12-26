@@ -62,7 +62,12 @@ header{
   color: #fff;
 }
 
+.none__li{
+  display: none;
+  justify-content: center;
+  align-items: center;
 
+}
 
 
 /* Main__menu */
@@ -110,9 +115,11 @@ header{
   display: flex;
   text-align: center;
   margin-top: 1px;
-
- 
 }
+.lnb .icon a{
+  color: #000;
+}
+
 .lnb .icon > input{
   font-size: 13px;
   border-radius: 5px;
@@ -698,11 +705,19 @@ footer .info span{
 .hover__menu .hover__a{
   display: none;
 }
+.none__li{
+  display: block;
+}
 }
 
 /* 768 ~ 1024px */
 @media screen and (min-width:768px) and (max-width:1024px){
-
+  .none__li{
+    display: block;
+  }
+  header .snow_{
+    display: none;
+  }
   .lnb{
     display: none;
   }
