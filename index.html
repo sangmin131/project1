@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- 파비콘 -->
+  <link rel="icon" href="./image/favicon-16x16.png">
   <title>케이스 나라</title>
   <!-- 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
@@ -15,18 +16,23 @@
   <!-- 구글폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
   <!-- css연결 -->
-  <link rel="stylesheet" href="./CSS/style.css">
   <link rel="stylesheet" href="./CSS/main.css">
   <!-- 슬라이드 라이브러리 연결 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- js연결 -->
-  <script defer src="./JS/app.js"></script>
   <script defer src="./JS/main.js"></script>
+  <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+
 </head>
 
 <body>
 <header>
+  <script>
+  
+  var sf = new Snowflakes();
+  
+  </script> 
 <div class="gnb__bg">
   <div class="inner">
     <nav class="gnb">
@@ -34,9 +40,9 @@
         <img src="./image/로고.png" alt="logo" class="logo">
       </a>
       <div>
-        <a href="#">로그인</a>
+        <a href="http://127.0.0.1:5500/project1/login.html">로그인</a>
         <p>/</p>
-        <a href="#">회원가입</a>
+        <a href="http://127.0.0.1:3000/project1/info.html">회원가입</a>
       </div>
       <a href="#" class="btn-hamburger">
       <span class="material-icons">menu</span>
@@ -158,7 +164,7 @@
 <section class="main__bg">
   <div class="inner">
     <a href="#">
-      <img src="./image/메인배너.png" alt="Event">
+      <img src="./image/메인배넝.jpg" alt="Event">
     </a>
   </div>
 </section>

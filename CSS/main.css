@@ -11,7 +11,8 @@ p{
 }
 
 .logo{
-  width: 100%;
+  width: 100px;
+  
 }
 .inner{
   max-width: 1100px;
@@ -27,13 +28,15 @@ header{
 }
 .gnb__bg{
   width: 100%;
-  background-color: #7f7f7f;
+  background-color: #696969;
 }
 
 .inner .gnb{
   display: flex;
+  height: 100px;
   justify-content: space-between;
-  background-color: #7f7f7f;
+  align-items: center;
+  background-color: #696969;
 }
 .inner .gnb > div{
   display: flex;
@@ -44,6 +47,8 @@ header{
   margin-right: 7px;
   font-size: 13px;
   color: #000;
+  text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff;
+
 }
 .inner .gnb > div > p{
   display: block;
@@ -68,11 +73,12 @@ header{
 
 .lnb .main__menu{
   display: flex;
+  justify-content: space-around;
   
 }
 .lnb .main__menu > li{
-  position:relative;
-  padding: 0 50px;
+  position: relative;
+  padding-left: 27px;
   font-family:Nanum Pen Script, cursive, sans-serif;
   font-size: 25px;
 }
@@ -143,8 +149,12 @@ header{
   width: 100%;
   background-color: rgb(216, 84, 84);
   }
+  .main__bg .inner a{
+    display: flex;
+    justify-content: center;
+  }
 .main__bg .inner a > img{
-  width: 100%;
+  width: 200%;
 }
 
 .Middle > p{

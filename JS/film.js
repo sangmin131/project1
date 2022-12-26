@@ -37,3 +37,26 @@ document.addEventListener("click", function (e) {
     boxElement.classList.remove("active");
   });
 });
+
+const topBtn = document.querySelector('#to-top');
+
+topBtn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });  
+}
+
+
+window.addEventListener('scroll', function(){
+
+  if(window.scrollY > 2000){
+          gsap.to(topBtn, 0.6, {
+          opacity: 1,
+          x:0
+          });
+          }
+  else {
+          gsap.to(topBtn, 0.6, {
+          opacity: 0,
+          x:100});
+  }      
+  
+});

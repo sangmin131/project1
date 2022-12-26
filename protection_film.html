@@ -19,6 +19,8 @@
     <!-- 슬라이드 라이브러리 연결 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- gsap 연결 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- js연결 -->
     <script defer src="./JS/film.js"></script>
     <script defer src="./JS/youtube.js"></script>
@@ -33,9 +35,9 @@
             <img src="./image/로고.png" alt="logo" class="logo">
           </a>
           <div>
-            <a href="#">로그인</a>
+            <a href="http://127.0.0.1:5500/project1/login.html">로그인</a>
             <p>/</p>
-            <a href="#">회원가입</a>
+            <a href="http://127.0.0.1:3000/project1/info.html">회원가입</a>
           </div>
           <a href="#" class="btn-hamburger">
           <span class="material-icons">menu</span>
@@ -247,14 +249,22 @@
 </section>
   <!-- YOUTUBE -->
   <section class="youtube">
-    <!-- 영상이 출력될 영역 -->
-    <div class="youtube__area">
-      <!-- 실제 재생될 요소 -->
-      <div id="player"></div>
-    </div>
+    <div class="inner">
+      <!-- 영상이 출력될 영역 -->
+        <div class="youtube__area">
+        <!-- 실제 재생될 요소 -->
+          <div id="player"></div>
+        </div>
+  
+      <!-- 섹션 전체를 덮을 커버 요소 -->
+      <div class="youtube__cover"></div>
 
-    <!-- 섹션 전체를 덮을 커버 요소 -->
-    <div class="youtube__cover"></div>
+    </div>
+  </section>
+  <section class="page">
+    <div class="inner">
+      <img src="./image/상품설명.jpg" alt="상품설명">
+    </div>
   </section>
 </body>
 <!-- 푸터  -->
@@ -288,4 +298,7 @@
     Case world Company. All Rights Reserved.
   </span>
 </footer>
+  <div id="to-top">
+    <span class="material-icons">arrow_upward</span>
+  </div>
 </html>
