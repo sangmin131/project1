@@ -583,6 +583,9 @@ footer .sns{
   justify-content: end;
   gap: 10px;
 }
+footer .sns a:hover{
+  transform: scale(1.1);
+}
 
 
 
@@ -715,7 +718,7 @@ footer .info span{
   .none__li{
     display: block;
   }
-  header .snow_{
+  .snow_{
     display: none;
   }
   .lnb{
