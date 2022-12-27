@@ -6,7 +6,7 @@
 }
 .protection .inner{
   width: 100%;
-  height: 900px;
+  height: 1000px;
   display: flex;
   justify-content: center;
   
@@ -17,13 +17,14 @@
 }
 .protection .inner .film > div{
   display: flex;
+  justify-content: start;
   gap: 30px;
   margin-top: 40px;
 }
 
 .protection .inner .film > a{
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .protection .inner .film > a > img{
@@ -273,5 +274,29 @@ white-space:nowrap;
 }
   .page{
     padding-top: 50px;
+  }
+  .protection{
+    height: 100%;
+  }
+  .protection .inner{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .protection .inner .film > div{
+    display: flex;
+    justify-content: center;
+  }
+  .film__title{
+    flex-wrap: wrap;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .film__text{
+    margin-top: 50px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

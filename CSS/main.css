@@ -94,6 +94,7 @@ header{
 }
 .lnb .main__menu > li:hover .sub__menu{
   display: block;
+  z-index: 9;
 }
 
 .lnb .main__menu .sub__menu{
