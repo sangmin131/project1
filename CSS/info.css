@@ -220,3 +220,46 @@ input.placeholder-hidden:focus::placeholder {
     justify-content: center;
     align-items: center;
   }
+  .bt-menu ul li{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* 320 ~ 767px */
+@media screen and (min-width:320px) and (max-width:767px){
+  #container{
+    width: 100%;
+    height: 100%;
+  }
+  .input-group > input{
+    margin-top: 20px;
+  }
+  .input-group > input{
+    width: 80%;
+  }
+  .input-group-row > input{
+    width: 80%;
+  }
+  .birth-month{
+    width: 80%;
+    margin-top: 20px;
+  }
+  .bottom .bt-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    white-space : nowrap;
+  }
+  .bottom .bt-menu ul li{
+    margin-top: 10px;
+  }
+  #gender{
+    width: 80%;
+  }
+  #nationNo{
+    width: 80%;
+  }
+  .btn_area{
+    width: 80%;
+  }
+  }

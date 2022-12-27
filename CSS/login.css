@@ -123,3 +123,22 @@ button {
   justify-content: center;
   align-items: center;
 }
+.bt-menu ul li{
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* 320 ~ 767px */
+@media screen and (min-width:320px) and (max-width:767px){
+  .bottom .bt-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    white-space : nowrap;
+  }
+  .bottom .bt-menu ul li{
+    margin-top: 10px;
+  }
+
+
+}

@@ -11,19 +11,16 @@
    //  var player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-       //  height: '360',
-       //  width: '640',
-        videoId: 'Wq40pwsC5Vw',//최초 재생할 유튜브영상 ID
-       playerVars:{//자세한 옵션은 플레이어 매개변수 메뉴 확인
-           autoplay:true,//자동 재생 유무
-           loop:true, //반복 재생유무
-           playlist:'Wq40pwsC5Vw'//반복 재생할 유튜브영상 ID목록
-       },
-        events: {
-           //영상 준비되었을 때
-           onReady:function(event){
-               event.target.mute();//음소거!
-           }
-        }
+      videoId: '4K5ixHZzpnY',//최초 재생할 유튜브영상 ID
+      playerVars:{//자세한 옵션은 플레이어 매개변수 메뉴 확인
+      autoplay:true,//자동 재생 유무
+      loop:true, //반복 재생유무
+      playlist:'4K5ixHZzpnY'//반복 재생할 유튜브영상 ID목록
+      },
+      events: {
+      onReady:function(event){
+      event.target.mute();//음소거!
+      }
+      }
       });
-    }
+    };
