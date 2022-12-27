@@ -6,7 +6,7 @@
 }
 .protection .inner{
   width: 100%;
-  height: 1000px;
+  height: 100%;
   display: flex;
   justify-content: center;
   
@@ -279,7 +279,7 @@ white-space:nowrap;
     height: 100%;
   }
   .protection .inner{
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
   }
   .protection .inner .film > div{
@@ -293,10 +293,12 @@ white-space:nowrap;
     align-items: center;
   }
   .film__text{
+    width: 100%;
     margin-top: 50px;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
 }
