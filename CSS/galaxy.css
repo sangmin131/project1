@@ -46,3 +46,18 @@ margin-top: 20px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.galaxy_p .inner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.galaxy_p .inner > div{
+  background-color: rgb(160, 160, 160);
+}
+
+.info{
+  display:inline-block;
+}
