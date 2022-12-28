@@ -308,7 +308,7 @@ white-space:nowrap;
     text-align: center;
   }
   .protection .inner{
-    justify-content: start;
+    justify-content: center;
   }
   .select.active .check_menu{
     left: 2px;
@@ -327,7 +327,7 @@ white-space:nowrap;
 }
 @media screen and (max-width:375px) {
   .protection .inner{
-    justify-content: center;
+    justify-content: start;
   }
   .select.active .check_menu{
     left: 2px;
