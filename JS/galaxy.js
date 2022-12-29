@@ -27,3 +27,37 @@
         }
       });
     }
+
+
+
+const topBtn = document.querySelector('#to-top');
+  topBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });  
+    }
+window.addEventListener('scroll', function(){
+  if(window.scrollY > 1000){
+    gsap.to(topBtn, 0.6, {
+    opacity: 1,
+    x:0
+    });
+  }
+  else {
+    gsap.to(topBtn, 0.6, {
+    opacity: 0,
+    x:100});
+  }      
+});
+
+
+new Swiper('.main_sub .swiper', {
+  // Optional parameters
+  direction: 'horizontal', // 수평 슬라이드(기본값)
+  autoplay: { // 자동 재생 여부
+  },
+  slidesPerView: 2, // 한 번에 보여줄 슬라이드 개수
+  navigation: { //이전 다음 슬라이드 버튼 사용
+    nextEl: '.main_sub .swiper-button-next',
+    prevEl: '.main_sub .swiper-button-prev',
+  },
+
+});

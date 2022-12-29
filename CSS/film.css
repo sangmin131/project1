@@ -322,10 +322,13 @@ white-space:nowrap;
   .button{
     margin-right: 10px;
     margin-left: 10px;
-  }
 
+  }
+  .snow_{
+    display: none;
+  }
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:414px) {
   .protection .inner{
     justify-content: start;
   }
